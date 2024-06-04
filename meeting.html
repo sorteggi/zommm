@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Zoom WebSDK CDN</title>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="origin-trial" content="">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/microbit-web-bluetooth/dist/microbit.umd.js"></script>
+
+</head>
+
+<body>
+    <style>
+        #controls {
+            position: fixed; /* Fixed to bottom of the screen */
+            bottom: 1; /* Align to the bottom */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust centering */
+            display: flex; /* Use flexbox for alignment */
+            justify-content: center; /* Center items */
+            gap: 1em; /* Space between icons */
+            z-index: 100; /* Ensure it's on top of other elements */
+            padding: 0.5em; /* Optional: Add some padding */
+        }
+        .control-container img {
+            width: 40px; /* Adjust size as needed */
+            height: 40px; /* Adjust size as needed */
+        }
+    </style>
+    <div id="controls">
+        <div class="control-container" id="connect">
+          <img src="microbit.png" />
+        </div>
+        <div class="control-container" id="upBtn">
+          <img src="up.png" />
+        </div>
+        <div class="control-container" id="leftBtn">
+          <img src="left.png" />
+        </div>
+        <div class="control-container" id="downBtn">
+          <img src="down.png" />
+        </div>
+        <div class="control-container" id="rightBtn">
+          <img src="right.png" />
+        </div>
+    </div>
+    <script src="https://source.zoom.us/3.7.0/lib/vendor/react.min.js"></script>
+    <script src="https://source.zoom.us/3.7.0/lib/vendor/react-dom.min.js"></script>
+    <script src="https://source.zoom.us/3.7.0/lib/vendor/redux.min.js"></script>
+    <script src="https://source.zoom.us/3.7.0/lib/vendor/redux-thunk.min.js"></script>
+    <script src="https://source.zoom.us/3.7.0/lib/vendor/lodash.min.js"></script>
+    <script src="https://source.zoom.us/3.7.0/zoom-meeting-3.7.0.min.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="js/vconsole.min.js"></script>
+    <script src="js/meeting.js"></script>
+    <script type="module" src="/main.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
